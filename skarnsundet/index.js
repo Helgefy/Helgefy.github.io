@@ -1,4 +1,7 @@
 
 
-
-$('h1').addEventListner('click',console.log('klikk'));
+$(document).ready(function(){
+  $('h1').click(function(){
+    console.log('klikk');
+  });
+});
