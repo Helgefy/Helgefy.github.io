@@ -11,7 +11,10 @@
    // Listen for the jQuery ready event on the document
    $(function() {
      
-
+    $('h1').click(function(){
+      console.log('klikk');
+    });
+    //DOM code
 
 
    });
