@@ -30,10 +30,10 @@
       </div><!--/container fluid-->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav" id="#bs-example-navbar-collapse-1">
-          <li class="active"><a href="#">Hjem</a></li>
+          <li><a href="../index.html">Hjem</a></li>
           <li><a href="#">Forskning</a></li>
           <li><a href="#">Under vann</a></li>
-          <li><a href="#">Album</a></li>
+          <li class="active"><a href="#">Album</a></li>
         </ul>
       </div>
     </div><!--/container fluid-->
@@ -43,52 +43,62 @@
 
   </div>
   <div class="kropp">
-    <div class="container-fluid">
+    <div class="col-md-4">
+      <ul>
+        <li><a href="#album1">Album 1</a></li>
+        <li><a href="#album2">Album 2</a></li>
+        <li><a href="#album3">Album 3</a></li>
+        <li><a href="#album4">Album 4</a></li>
+        <li><a href="#album5">Album 5</a></li>
+        <li><a href="#album6">Album 6</a></li>
+      </ul>
+    </div>
+    <div class="col-md-8 container-fluid">
       <div class="row">
         <div class="card col-md-4 col-sm-4 col-lg-4">
-          <img class="img-responsive img-thumbnail" src="pics/skarnsundbrua.jpg" id="alBilde">
+          <img class="img-responsive img-thumbnail alBilde" src="pics/skarnsundbrua.jpg" id="alBilde" alt="Skarnsundbrua">
 
           <p class="card-text">
             Her står en beskrivelse til bildet som er over. Teksten kan være ok lang:
           </p>
         </div>
         <div class="card col-md-4 col-sm-4 col-lg-4">
-          <img class="img-responsive img-thumbnail" src="pics/skarnsundbrua.jpg" id="alBilde">
+          <img class="img-responsive img-thumbnail alBilde" src="pics/skarnsundbrua.jpg" id="alBilde">
 
           <p class="card-text">
             Her står en beskrivelse til bildet som er over. Teksten kan være ok lang:
           </p>
         </div>
         <div class="card col-md-4 col-sm-4 col-lg-4">
-          <img class="img-responsive img-thumbnail" src="pics/skarnsundbrua.jpg" id="alBilde">
+          <img class="img-responsive img-thumbnail alBilde" src="pics/skarnsundbrua.jpg" id="alBilde">
 
           <p class="card-text">
             Her står en beskrivelse til bildet som er over. Teksten kan være ok lang:
           </p>
         </div> 
         <div class="card col-md-4 col-sm-4 col-lg-4">
-          <img class="img-responsive img-thumbnail" src="pics/skarnsundbrua.jpg" id="alBilde">
+          <img class="img-responsive img-thumbnail alBilde" src="pics/skarnsundbrua.jpg" id="alBilde">
 
           <p class="card-text">
             Her står en beskrivelse til bildet som er over. Teksten kan være ok lang:
           </p>
         </div> 
         <div class="card col-md-4 col-sm-4 col-lg-4">
-          <img class="img-responsive img-thumbnail" src="pics/skarnsundbrua.jpg" id="alBilde">
+          <img class="img-responsive img-thumbnail alBilde" src="pics/skarnsundbrua.jpg" id="alBilde">
 
           <p class="card-text">
             Her står en beskrivelse til bildet som er over. Teksten kan være ok lang:
           </p>
         </div> 
         <div class="card col-md-4 col-sm-4 col-lg-4">
-          <img class="img-responsive img-thumbnail" src="pics/skarnsundbrua.jpg" id="alBilde">
+          <img class="img-responsive img-thumbnail alBilde" src="pics/skarnsundbrua.jpg" id="alBilde">
 
           <p class="card-text">
             Her står en beskrivelse til bildet som er over. Teksten kan være ok lang:
           </p>
         </div> 
         <div class="card col-md-4 col-sm-4 col-lg-4">
-          <img class="img-responsive img-thumbnail" src="pics/skarnsundbrua.jpg" id="alBilde">
+          <img class="img-responsive img-thumbnail alBilde" src="pics/skarnsundbrua.jpg" id="alBilde">
 
           <p class="card-text">
             Her står en beskrivelse til bildet som er over. Teksten kan være ok lang:
@@ -99,17 +109,17 @@
 
   </div><!--/kropp-->
 
-    <!-- Madal for å vise bilder i full skjerm  -->
+    <!-- Modal for å vise bilder i full skjerm  -->
     <div id="myModal" class="modal1">
 
     <!-- The Close Button -->
-    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <span class="closer" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
 
     <!-- Modal Content (The Image) -->
     <img class="modal-content" id="img01">
 
     <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
+    <div id="caption-tekst"></div>
   </div><!--/myModal-->
 
   <footer class="footer">

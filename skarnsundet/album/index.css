@@ -93,37 +93,40 @@ footer{
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  position: absolute;
+  margin: auto;
+  display: block;
+  vertical-align: center;
+  width: 80%;
+  max-width: 1000px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+#caption-tekst {
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 15%;
+  height: 150px;
 }
 /* The Close Button */
-.close {
+.closer {
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 35px;
     color: white;
-    font-size: 50px;
+    text-decoration: none;
+    font-size: 70px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.closer:hover,
+.closer:focus {
     color: white;
+    opacity:0.7;
     text-decoration: none;
     cursor: pointer;
 }

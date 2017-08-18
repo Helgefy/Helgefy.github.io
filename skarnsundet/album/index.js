@@ -1,3 +1,4 @@
+
 // IIFE - Immediately Invoked Function Expression
 (function(yourcode) {
 
@@ -15,19 +16,26 @@
      var $modal = $('.modal1');
      var $navbar = $('.navbar');
 
-     var $img = $('#alBilde');
+     var $img = $('.alBilde');
      var $modalImg = $('#img01');
-     var $caption = $('#caption');
+     var $caption = $('#caption-tekst');
+     var img;
+     var clickedImg 
 
+     // Åpner modal når den blir klikket
      $img.click(function(){
-      console.log('das');
+      $img.each(function(){ 
+        if ($(this).is(':hover'));{
+          clickedImg = $(this)[0];
+        }
+      });
       $modal.css('display', 'block');
       $navbar.css('display', 'none');
-      $modalImg.attr('src', this.src);
-      $caption.text(this.alt);
+      $modalImg.attr('src', clickedImg.src);
+      $caption.text(clickedImg.alt);
      });
-
-     var $span = $('.close')
+     // Lukker modal
+     var $span = $('.closer')
      $span.click(function(){
       $modal.css('display', 'none')
       $navbar.css('display', 'block');
@@ -37,6 +45,7 @@
 
 
    });
+
 
    // annen kode
   
